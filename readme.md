@@ -6,5 +6,6 @@ Jose Luis Chavez
 Lizzette Perez
 
 Felipe Diaz
+'Productos'
 
 Cristian Blanco
