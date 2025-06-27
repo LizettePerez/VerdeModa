@@ -1,4 +1,4 @@
-:root{
+:root {
   --color-bg: #FFFFFF;
   --color-titulo: #121712;
   --color-subtitulo1: #121712;
@@ -66,3 +66,15 @@
         flex-direction: column;
       }
     }
+
+.titulo {
+  color: var(--color-titulo);
+  font-feature-settings: 'dlig' on;
+  font-family: "Plus Jakarta Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 45px;
+  letter-spacing: -1px;
+}
+
