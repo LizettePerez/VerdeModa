@@ -1,10 +1,61 @@
+/* Variables CSS */
+:root {
+  --color-bg: #FFFFFF;
+  --color-titulo: #121712;
+  --color-subtitulo1: #121712;
+  --color-subtitulo2: #638763;
+  --color-border: #DBE5DB;
+  --color-fondo-icono: #F0F5F0;
+  --color-btn: #14B814;
+  --color-nav: #E5E8EB;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  line-height: 1.6;
+  color: var(--color-titulo);
+  background: var(--color-bg);
+}
+
+main {
+  padding: 20px 160px;
+}
+
+/* Typography */
+.titulo {
+  color: var(--color-titulo);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 45px;
+  letter-spacing: -1px;
+}
+
+.titulo-section {
+  color: var(--color-subtitulo1);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.subtitulo {
+  color: var(--color-subtitulo1);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
 /* Navbar */
 .navbar {
   display: flex;
-  padding: 0.75rem 2.5rem; /* 12px 40px */
+  padding: 0.75rem 2.5rem;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #E5E8EB;
+  border-bottom: 1px solid var(--color-nav);
 }
 
 .navbar .container-fluid {
@@ -13,53 +64,73 @@
   flex-wrap: wrap;
 }
 
-.navbar-nav {
-  color: #121712;
-  font-family: 'Plus Jakarta Sans';
-  font-size: 0.875rem; /* 14px */
-  font-weight: 600;
-  line-height: 21px; /* 150% */
-  gap: 1.5rem;
-}
-
 .navbar-brand {
   color: var(--color-titulo);
-  font-family: 'Plus Jakarta Sans';
-  font-size: 1.125rem;  
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.125rem;
   font-weight: 800;
   text-decoration: none;
   order: 1;
 }
 
+.navbar-nav {
+  color: var(--color-titulo);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 21px;
+  gap: 1.5rem;
+}
+
 .logo-img {
-  width: 1rem; /* 16px */
-  height: 1rem; /* 16px */
+  width: 1rem;
+  height: 1rem;
   object-fit: contain;
 }
 
-/* Contenedor de iconos - posicionamiento dinámico */
+/* Navbar Layout */
 .nav-icons-container {
   display: flex;
   align-items: center;
   gap: 0.75rem;
 }
 
-/* Grupo de elementos del lado derecho (iconos + hamburguesa) */
 .navbar-right-group {
   order: 3;
 }
 
-/* Botón hamburguesa */
 .navbar-toggler {
   border: none;
   padding: 0.25rem 0.5rem;
   margin-left: 0.5rem;
 }
 
-/* Collapse del navbar */
 .navbar-collapse {
   order: 4;
   width: 100%;
+}
+
+/* Navbar Icons */
+.nav-icon {
+  display: flex;
+  padding: 0px 10px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.nav-icon:hover {
+  transform: scale(1.1);
+}
+
+.icon-img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: var(--color-fondo-icono);
+  padding: 4px;
 }
 
 /* Hero Section */
@@ -92,27 +163,85 @@
   z-index: 1;
 }
 
-/* Navbar Icons */
-.nav-icon {
+/* Products Section */
+.section-products {
+  padding: 60px 40px;
+}
+
+.section-products h2 {
+  margin: 0 0 30px 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.products {
   display: flex;
-  padding: 0px 10px;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  transition: transform 0.2s ease;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
-.icon-img {
+.product {
+  flex: 1;
+  min-width: 250px;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product h4 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  margin: 10px 0 0 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.product p {
+  margin: 0;
+  color: var(--color-subtitulo2);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Sections */
+.seccion1 {
+  padding: 20px 16px 12px 16px;
+}
+
+.seccion2 {
+  padding: 40px 16px;
+}
+
+/* Cards */
+.card {
+  border: 1px solid var(--color-border);
+}
+
+.card-title {
+  color: var(--color-subtitulo1);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.card-text {
+  color: var(--color-subtitulo2);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.card-body img {
   width: 20px;
-  height: 20px;
-  object-fit: contain;
-  border-radius: 8px;
-  background: #F0F5F0;
+  margin-bottom: 12px;
 }
 
-/* Responsive Design - Desktop (lg y superior) */
+/* Responsive Design - Desktop */
 @media (min-width: 992px) {
-  /* En desktop: iconos van después del collapse (derecha) */
   .navbar-right-group {
     order: 5;
     margin-left: 1rem;
@@ -140,18 +269,16 @@
 }
 
 /* Responsive Design - Tablet y Mobile */
-
 @media (max-width: 991.98px) {
   .navbar .container-fluid {
     justify-content: space-between;
   }
-  /* El grupo de iconos + hamburguesa queda a la derecha */
+  
   .navbar-right-group {
     order: 2;
     flex-direction: row;
   }
   
-  /* Asegurar que los iconos estén antes del botón hamburguesa */
   .nav-icons-container {
     order: 1;
     margin-right: 0.5rem;
@@ -162,7 +289,6 @@
     margin-left: 0;
   }
   
-  /* El collapse va abajo con todo el ancho */
   .navbar-collapse {
     order: 4;
     flex-direction: column;
@@ -178,7 +304,6 @@
     width: 100%;
   }
   
-  /* Hero container responsive */
   .hero {
     max-width: 90%;
   }
@@ -187,7 +312,8 @@
     padding: 0 1rem;
   }
 }
-  /* Mobile adjustments */
+
+/* Mobile adjustments */
 @media (max-width: 767.98px) {
   .navbar {
     padding: 0.75rem 1.25rem;
@@ -197,5 +323,12 @@
     max-width: 95%;
     padding: 2rem 1rem;
   }
+  
+  .products {
+    flex-direction: column;
+  }
+  
+  main {
+    padding: 20px;
+  }
 }
-
