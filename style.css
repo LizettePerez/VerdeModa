@@ -140,12 +140,11 @@
 }
 
 /* Responsive Design - Tablet y Mobile */
+
 @media (max-width: 991.98px) {
-  /* En tablet/mobile: forzar que el container-fluid use justify-content: space-between */
   .navbar .container-fluid {
     justify-content: space-between;
   }
-  
   /* El grupo de iconos + hamburguesa queda a la derecha */
   .navbar-right-group {
     order: 2;
