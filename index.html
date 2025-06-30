@@ -13,7 +13,6 @@
 
   <title>VerdeModa</title>
 
-  <!-- Google Fonts: Plus Jakarta Sans -->
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
     rel="stylesheet">
 
@@ -26,22 +25,20 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
-          <img src="assets/img/Vector - 00.png" alt="VerdeModa Logo" class="logo-img me-2">
+          <img src="./assets/svg/logo_icon.svg" alt="VerdeModa Logo" class="logo-img me-2">
           VerdeModa
         </a>
 
-        <!-- Iconos y botón hamburguesa agrupados -->
         <div class="navbar-right-group d-flex align-items-center">
-          <!-- Iconos - se reordenan con CSS según el tamaño de pantalla -->
           <div class="nav-icons-container d-flex align-items-center">
-            <a href="search.html" class="nav-icon" title="Search">
-              <img src="assets/img/Vector - 01.png" alt="Search" class="icon-img">
+            <a href="#" class="nav-icon" title="Search">
+              <img src="./assets/svg/serch_icon.svg" alt="Search" class="icon-img">
             </a>
-            <a href="profile.html" class="nav-icon" title="Profile">
-              <img src="assets/img/Vector - 02.png" alt="Profile" class="icon-img">
+            <a href="#" class="nav-icon" title="User">
+              <img src="./assets/svg/user_icon.svg" alt="User" class="icon-img">
             </a>
-            <a href="cart.html" class="nav-icon" title="Cart">
-              <img src="assets/img/Vector - 03.png" alt="Cart" class="icon-img">
+            <a href="#" class="nav-icon" title="Cart">
+              <img src="./assets/svg/cart-icon.svg" alt="Cart" class="icon-img">
             </a>
           </div>
 
@@ -54,7 +51,6 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <div class="flex-grow-1"></div>
 
-          <!-- Enlaces de navegación -->
           <div class="navbar-nav">
             <a class="nav-link" href="#">Shop</a>
             <a class="nav-link" href="#">About Us</a>
@@ -66,66 +62,91 @@
     </nav>
   </header>
 
-  <main>
-    <section class="section-products">
-      <h2>Featured Products</h2>
-      <div class="products">
-        <div class="product">
-          <img src="assets\img\eco-dress.png" alt="Eco–Chic Dress">
-          <h4>Eco–Chic Dress</h4>
-          <p>Elegant and eco-conscious, perfect for any occasion.</p>
-        </div>
-        <div class="product">
-          <img src="assets\img\sustainable-shirt.png" alt="Sustainable Style Shirt">
-          <h4>Sustainable Style Shirt</h4>
-          <p>Comfortable and stylish, made with sustainable materials.</p>
-        </div>
-        <div class="product">
-          <img src="assets\img\eco-accessories.png" alt="Eco–Friendly Accessories">
-          <h4>Eco–Friendly Accessories</h4>
-          <p>Complete your look with our range of sustainable accessories.</p>
+  <main class="px-3 px-sm-4 px-md-5 px-lg-5 px-xl-5 px-xxl-5 py-3">
+    <section class="hero position-relative d-flex align-items-center justify-content-center text-white overflow-hidden">
+      <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+
+      <div class="hero-content container position-relative">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            <h1 class="display-4 fw-bold mb-3">Dress Responsibly</h1>
+            <p class="lead mb-4">Explore our collection of eco-friendly fashion, crafted with care for the planet and
+              your style.</p>
+            <a href="#" class="btn btn-lg px-4 shop-now-btn">Shop Now</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="container seccion1">
-        <h3 class="titulo-section">Our Commitment</h3>
+    <section class="py-4 py-md-5">
+      <h2 class="fs-3 fw-bold mb-4">Featured Products</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="product-card">
+            <img src="assets\img\eco-dress.png" alt="Eco–Chic Dress" class="w-100 rounded">
+            <h4 class="fs-5 fw-semibold mt-3 mb-1">Eco–Chic Dress</h4>
+            <p class="text-muted mb-0">Elegant and eco-conscious, perfect for any occasion.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-card">
+            <img src="assets\img\sustainable-shirt.png" alt="Sustainable Style Shirt" class="w-100 rounded">
+            <h4 class="fs-5 fw-semibold mt-3 mb-1">Sustainable Style Shirt</h4>
+            <p class="text-muted mb-0">Comfortable and stylish, made with sustainable materials.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-card">
+            <img src="assets\img\eco-accessories.png" alt="Eco–Friendly Accessories" class="w-100 rounded">
+            <h4 class="fs-5 fw-semibold mt-3 mb-1">Eco–Friendly Accessories</h4>
+            <p class="text-muted mb-0">Complete your look with our range of sustainable accessories.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-4">
+      <div class="container">
+        <h3 class="fs-4 fw-bold text-center mb-3">Our Commitment</h3>
       </div>
 
-      <div class="container text-left seccion2">
-        <h2 class="titulo">Sustainable Practices</h2>
-        <p class="subtitulo">At VerdeModa, we are committed to sustainability in every step of our process, from
-          sourcing
-          <br>
-          materials to production and packaging.
-        </p>
-        <div class="row">
+      <div class="container py-4">
+        <div class="text-start mb-5">
+          <h2 class="display-6 fw-bold mb-3">Sustainable Practices</h2>
+          <p class="lead">At VerdeModa, we are committed to sustainability in every step of our process, from
+            sourcing<br>
+            materials to production and packaging.
+          </p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 border">
               <div class="card-body">
-                <img src="./assets/svg/recycle.svg" class="card-img">
-                <h5 class="card-title">Recycled Materials</h5>
-                <p class="card-text">We use recycled materials to reduce waste and minimize our environmental impact.
+                <img src="./assets/svg/recycle.svg" class="mb-3" width="20" height="20" alt="Recycle icon">
+                <h5 class="card-title fs-5 fw-bold">Recycled Materials</h5>
+                <p class="card-text text-muted">We use recycled materials to reduce waste and minimize our environmental
+                  impact.
                 </p>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 border">
               <div class="card-body">
-                <img src="./assets/svg/leaf.svg" class="card-img">
-                <h5 class="card-title">Eco-Friendly Production</h5>
-                <p class="card-text">Our production processes are designed to minimize energy and water usage.</p>
+                <img src="./assets/svg/leaf.svg" class="mb-3" width="20" height="20" alt="Leaf icon">
+                <h5 class="card-title fs-5 fw-bold">Eco-Friendly Production</h5>
+                <p class="card-text text-muted">Our production processes are designed to minimize energy and water
+                  usage.</p>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 border">
               <div class="card-body">
-                <img src="./assets/svg/heart.svg" class="card-img">
-                <h5 class="card-title">Ethical Sourcing</h5>
-                <p class="card-text">We partner with suppliers who share our commitment to ethical and sustainable
+                <img src="./assets/svg/heart.svg" class="mb-3" width="20" height="20" alt="Heart icon">
+                <h5 class="card-title fs-5 fw-bold">Ethical Sourcing</h5>
+                <p class="card-text text-muted">We partner with suppliers who share our commitment to ethical and
+                  sustainable
                   practices.</p>
               </div>
             </div>
