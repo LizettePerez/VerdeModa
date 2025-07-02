@@ -9,3 +9,6 @@ Felipe Diaz
 'Productos'
 
 Cristian Blanco
+
+Camilo Jiménez
+'footer'
